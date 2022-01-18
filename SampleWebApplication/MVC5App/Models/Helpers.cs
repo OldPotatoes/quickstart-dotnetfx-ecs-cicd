@@ -20,6 +20,8 @@ namespace MVC5App.Models
             string password = appConfig["RDS_PASSWORD"];
             string hostname = appConfig["RDS_HOSTNAME"];
             string port = appConfig["RDS_PORT"];
+            // TODO
+            //string somethingNew = ???
 
             return "Data Source=" + hostname + ";Initial Catalog=" + dbname + ";User ID=" + username + ";Password=" + password + ";";
         }
